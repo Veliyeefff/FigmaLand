@@ -1,0 +1,21 @@
+.btn-blue{
+    background-color: $bg-blue;
+    color: white;
+    border: none;
+    border-radius: 35px;
+    padding: 16px 20px;
+    width: 260px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.btn-white{
+    background-color: white;
+    color: $bg-blue;
+    border: none;
+    border-radius: 35px;
+    padding: 16px 70px;
+    width: 260px;
+    text-align: center;
+    cursor: pointer;
+}

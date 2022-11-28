@@ -1,0 +1,92 @@
+.features{
+    @include Center();
+    justify-content: center;
+    flex-direction: column;
+    padding: 7% 0;
+
+    .head-text{
+        @include Center();
+        justify-content: center;
+        flex-direction: column;
+        h2{
+            font-size: 42px;
+            font-weight: 400;
+            text-align: center;
+        }
+        h4{
+            max-width: 60%;
+            font-size: 28px;
+            font-weight: 400;
+            color: $bg-text-color;
+            text-align: center;
+            margin-top: 2rem;
+        }
+    }
+    .comp{
+        display: none;
+    }
+
+    .cards{
+        display: flex;
+        justify-content: center;
+        padding-left: 10%;
+        padding: 5% 20%;
+        .card{
+            @include Center();
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+            h3{
+                font-size: 20px;
+                font-weight: 700;
+                line-height: 28px;
+                margin: 27px 0px;
+                text-align: center;
+                max-width: 80%;
+
+            }
+            p{
+                color: $bg-text-color;
+                font-size: 18px;
+                font-weight: 400;
+                line-height: 28px;
+                max-width: 70%;
+                text-align: center;
+            }
+        }
+    }
+    .video{
+        img{
+            cursor: pointer;
+        }
+    }
+}
+@media only screen and (max-width: 576px){
+    .features{
+        .head-text{
+            h4{
+                display: none;
+            }
+            .teams{
+                display: flex;
+            }
+        }
+        .comp{
+            display: flex;
+        }
+        .cards{
+            padding: 0;
+            flex-direction: column;
+            .card{
+                padding: 0;
+                height: 350px;
+                h3{
+                    font-size: 20px;
+                }
+            }
+        }
+        .video{
+            display: none;
+        }
+    }
+}

@@ -1,0 +1,51 @@
+.computer{
+    @include Center();
+    justify-content: center;
+    padding: 10%;
+    .section-left{
+        h2{
+            font-size: 48px;
+            font-weight: 400;
+            line-height: 55px;
+            max-width: 50%;
+        }
+        h4{
+            font-size: 28px;
+            font-weight: 400;
+            line-height: 40px;
+            color: $bg-text-color;
+            max-width: 80%;
+            margin-top: 27px;
+        }
+        .btn-blue{
+            margin: 80px 0px;
+        }
+    }
+}
+@media only screen and (max-width: 576px){
+    .computer{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        .section-left{
+            h2{
+                max-width: 100%;
+                text-align: center;
+            }
+            h4{
+                max-width: 100%;
+                text-align: center;
+            }
+            .btn-blue{
+                width: 100%;
+            }
+        }
+    }
+
+    .section-right{
+        img{
+            width: 290px;
+            height: 180px;
+        }
+    }
+}

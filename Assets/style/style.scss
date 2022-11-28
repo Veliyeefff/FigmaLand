@@ -1,0 +1,9 @@
+@import 'Abstract/mixins', 'Abstract/variables';
+
+@import 'Base/reset';
+
+@import 'Layout/footer', 'Layout/navbar';
+
+@import "Components/button" , 'Components/cards';
+
+@import 'Page/main', 'Page/features' , "Page/computer" , 'Page/input' , 'Page/contact';
